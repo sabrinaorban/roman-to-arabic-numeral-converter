@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    padding: 53px 30px;
+}
+.flex-container {
+    display: flex;
+}
+.main .page-title {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-top: 0;
+}
+.converter {
+    max-width: 400px;
+    width: 100%;
+    margin: 58px auto;
+}
+.converter input[type="text"] {
+    width: 100%;
+    height: 30px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    font-size: 16px;
+}
+
+.converter input[type="text"]:hover, .converter input[type="text"]:active, .converter input[type="text"]:focus {
+    border-bottom: 2px solid #3f51b5;
+}
+
+.converter button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 6px 25px;
+    box-shadow: none;
+    background: #3f51b5;
+    border: none;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #ffffff;
+    outline: none;   
+}
+.converter button:hover, .converter button:active, .converter button:focus {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.converter .flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.converter .flex-container .input-container {
+    width: 100%;
+    margin-right: 20px;
+}
+.converter .results {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #000000;
+}
+.converter .results .label {
+    font-weight: 300;
+}
+
+
+@media(max-width: 460px) {
+    .main {
+        padding: 40px 20px;
+    }
+    .main .page-title {
+        font-size: 28px;
+    }
+    .converter .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .converter button {
+        margin-top: 24px;
+        width: 100%;
+        padding: 8px 25px;
+    }
+    .converter .flex-container .input-container {
+        margin-right: 0;
+    }
+}
